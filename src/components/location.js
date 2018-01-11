@@ -37,9 +37,11 @@ class Location extends Component {
 
   getZipcode() {
     var self = this;
-    return <div>
+    return (
+     <div>
       <Zipcode onValueChange={self.setZipLocation} />
-    </div>;
+    </div>
+   )
   }
 
   render() {
@@ -52,4 +54,4 @@ class Location extends Component {
   }
 }
 
-export default Location;
+export default Location

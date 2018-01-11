@@ -32,13 +32,15 @@ class Zipcode extends Component {
   }
 
   render() {
-    return <div className="zip">
+    return (
+     <div className="zip">
       <input type="text"
              maxLength="5"
              value={this.state.value}
              onChange={this.handleChange}
              placeholder="Enter zip code"/>
-    </div>;
+    </div>
+   )
   }
 }
 
