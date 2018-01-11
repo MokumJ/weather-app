@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import './App.css';
-import Weather from './components/Weather';
+import Weather from './components/weather';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <Weather />
       </div>
-    );
+    )
   }
 }
 

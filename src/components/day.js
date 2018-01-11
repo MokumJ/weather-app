@@ -1,15 +1,15 @@
-import {react} from 'react'
+import React, { Component } from 'react';
 import { night } from '../SVG/moon-stars.svg'
 import { rain } from '../SVG/rain.svg'
 import { snow } from '../SVG/snow.svg'
 import { storm } from '../SVG/tornado.svg'
 import { wind } from '../SVG/wind.svg'
 import { fog } from '../SVG/fog.svg'
-import { cloud } from '../SVG/cloud.svg'
+import { cloudy } from '../SVG/cloud.svg'
 import { cloudyDay } from '../SVG/clouds-sun.svg'
 import { cloudyNight } from '../SVG/cloud-moon.svg'
+import { sun } from '../SVG/sun.svg'
 
-import
 class Day extends Component {
 
   displayDate() {
@@ -50,17 +50,14 @@ class Day extends Component {
   }
 
   render() {
-   return <div className="day">
+   return(
+   <div className="day">
      { this.getIcon() }
      <p>{ this.displayDate() }</p>
      <p><span className="max">{ Math.round(this.props.max) }˚</span> / { Math.round(this.props.min) }˚</p>
-   </div>;
+   </div>
+ )
  }
 }
 
 export default Day;
-
-
-}
-
-export default Day
